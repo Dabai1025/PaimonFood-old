@@ -12,11 +12,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(PaiMon.MOD_ID)
+@Mod(Utils.MOD_ID)
 public class PaiMon
 {
-    public static final String MOD_ID = "paimon";
-
     private static final Logger LOGGER = LogManager.getLogger();
 
     public PaiMon() {
