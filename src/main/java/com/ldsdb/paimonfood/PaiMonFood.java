@@ -23,6 +23,7 @@ public class PaiMonFood
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         RegItem.ITEMS.register(bus);
+        RegBlock.BLOCKS.register(bus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
