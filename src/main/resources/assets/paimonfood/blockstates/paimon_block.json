@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "paimonfood:block/paimon_block"
+    }
+  }
+}

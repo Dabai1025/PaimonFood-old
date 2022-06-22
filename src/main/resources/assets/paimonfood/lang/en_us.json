@@ -1,3 +1,5 @@
 {
-  "item.paimonfood.paimonfood_item": "P-a-i-M-o-n"
+  "item.paimonfood.paimonfood_item": "P-a-i-M-o-n",
+  "itemGroup.paimonfoodtab": "PaiMonFood",
+  "block.paimonfood.paimon_block": "PaiMon Block"
 }
