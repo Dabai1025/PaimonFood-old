@@ -1,5 +1,6 @@
 package com.ldsdb.paimonfood;
 
+import com.ldsdb.paimonfood.block.RegBlock;
 import com.ldsdb.paimonfood.item.RegItem;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;

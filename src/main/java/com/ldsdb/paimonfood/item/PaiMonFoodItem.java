@@ -1,7 +1,8 @@
 package com.ldsdb.paimonfood.item;
 
-import net.minecraft.world.item.CreativeModeTab;
+import com.ldsdb.paimonfood.tab.PaiMonFoodTab;
 import net.minecraft.world.item.Item;
+
 
 public class PaiMonFoodItem extends Item {
     public PaiMonFoodItem() {
