@@ -1,2 +1,3 @@
 # PaimonFood
-基于 Forge 1.20 开发的模组。
+此分支 Minecraft 版本为 1.20
+基于 Forge 开发
