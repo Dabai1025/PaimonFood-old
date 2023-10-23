@@ -4,18 +4,20 @@ import com.ldsdb.paimon.Block.ItemRegistry;
 import com.ldsdb.paimon.Food.FoodPaiMon;
 import com.ldsdb.paimon.Food.Registry;
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ItemTier implements IItemTier {
-    PAIMON(3, 500, 10.0F, 15.0F, 30, null);
+    PAIMON(3, 500, 10.0F, 15.0F, 30, () -> Ingredient.fromItems(Items.DIAMOND));
 
     private final int harvestLevel;
     private final int maxUses;
     private final float efficiency;
     private final float attackDamage;
     private final int enchantability;
+    private final Supplier<Ingredient> getRepairMaterial;
 
     ItemTier(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn, Supplier<Ingredient> repairMaterialIn) {
         this.harvestLevel = harvestLevelIn;
@@ -23,6 +25,7 @@ public enum ItemTier implements IItemTier {
         this.efficiency = efficiencyIn;
         this.attackDamage = attackDamageIn;
         this.enchantability = enchantabilityIn;
+        this.getRepairMaterial = repairMaterialIn;
     }
 
     @Override
@@ -52,7 +55,8 @@ public enum ItemTier implements IItemTier {
 
     @Override
     public Ingredient getRepairMaterial() {
-        return null;
+        return this.getRepairMaterial.get();
     }
 }
+
 

@@ -15,19 +15,11 @@ import org.apache.logging.log4j.Logger;
 @Mod(Utils.MOD_ID)
 public class PaiMon
 {
-    private static final Logger LOGGER = LogManager.getLogger();
-
     public PaiMon() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
         Registry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         SwordRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-    }
-
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        LOGGER.info("Hello Teacon 2021");
     }
 }
