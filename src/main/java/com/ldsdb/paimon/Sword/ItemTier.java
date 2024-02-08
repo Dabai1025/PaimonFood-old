@@ -1,8 +1,5 @@
 package com.ldsdb.paimon.Sword;
 
-import com.ldsdb.paimon.Block.ItemRegistry;
-import com.ldsdb.paimon.Food.FoodPaiMon;
-import com.ldsdb.paimon.Food.Registry;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
@@ -10,52 +7,52 @@ import net.minecraft.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ItemTier implements IItemTier {
-    PAIMON(3, 500, 10.0F, 15.0F, 30, () -> Ingredient.fromItems(Items.DIAMOND));
+    PAIMON(3, 500, 10.0F, 15.0F, 30, () -> Ingredient.of(Items.DIAMOND));
 
-    private final int harvestLevel;
-    private final int maxUses;
-    private final float efficiency;
-    private final float attackDamage;
-    private final int enchantability;
-    private final Supplier<Ingredient> getRepairMaterial;
+    private final int level;
+    private final int uses;
+    private final float speed;
+    private final float attackDamageBonus;
+    private final int enchantmentValue;
+    private final Supplier<Ingredient> repairIngredient;
 
-    ItemTier(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn, Supplier<Ingredient> repairMaterialIn) {
-        this.harvestLevel = harvestLevelIn;
-        this.maxUses = maxUsesIn;
-        this.efficiency = efficiencyIn;
-        this.attackDamage = attackDamageIn;
-        this.enchantability = enchantabilityIn;
-        this.getRepairMaterial = repairMaterialIn;
+    ItemTier(int level, int uses, float speed, float attackDamageBonus, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+        this.level = level;
+        this.uses = uses;
+        this.speed = speed;
+        this.attackDamageBonus = attackDamageBonus;
+        this.enchantmentValue = enchantmentValue;
+        this.repairIngredient = repairIngredient;
     }
 
     @Override
-    public int getMaxUses() {
-        return this.maxUses;
+    public int getUses() {
+        return this.uses;
     }
 
     @Override
-    public float getEfficiency() {
-        return this.efficiency;
+    public float getSpeed() {
+        return this.speed;
     }
 
     @Override
-    public float getAttackDamage() {
-        return this.attackDamage;
+    public float getAttackDamageBonus() {
+        return this.attackDamageBonus;
     }
 
     @Override
-    public int getHarvestLevel() {
-        return this.harvestLevel;
+    public int getLevel() {
+        return this.level;
     }
 
     @Override
-    public int getEnchantability() {
-        return this.enchantability;
+    public int getEnchantmentValue() {
+        return this.enchantmentValue;
     }
 
     @Override
-    public Ingredient getRepairMaterial() {
-        return this.getRepairMaterial.get();
+    public Ingredient getRepairIngredient() {
+        return this.repairIngredient.get();
     }
 }
 

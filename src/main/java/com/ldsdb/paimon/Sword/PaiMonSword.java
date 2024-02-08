@@ -6,6 +6,6 @@ import net.minecraft.item.SwordItem;
 
 public class PaiMonSword extends SwordItem {
     public PaiMonSword() {
-        super(ItemTier.PAIMON, 3, -2.4F, new Item.Properties().group(ModGroup.itemGroup));
+        super(ItemTier.PAIMON, 3, -2.4F, new Item.Properties().tab(ModGroup.itemGroup));
     }
 }

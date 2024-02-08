@@ -1,6 +1,5 @@
 package com.ldsdb.paimon.Block;
 
-import com.ldsdb.paimon.PaiMon;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;

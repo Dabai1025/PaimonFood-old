@@ -10,7 +10,7 @@ public class Group extends ItemGroup {
     }
 
     @Override
-    public ItemStack createIcon() {
+    public ItemStack makeIcon() {
         return new ItemStack(Registry.FoodPaiMon.get());
     }
 }
