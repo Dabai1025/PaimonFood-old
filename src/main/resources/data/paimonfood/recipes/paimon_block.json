@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "AA ",
+      "AA "
+    ],
+    "key": {
+      "A": {
+        "item": "paimonfood:paimon"
+      }
+    },
+    "result": {
+      "item": "paimonfood:paimon_block",
+      "count": 4
+    }
+  }
