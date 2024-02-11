@@ -97,10 +97,15 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven { url = "https://www.cursemaven.com" }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    runtimeOnly fg.deobf("curse.maven:jei-238222:5068328")
+    runtimeOnly fg.deobf("curse.maven:apple-skin-248787:4770822")
+    runtimeOnly fg.deobf("curse.maven:configured-457570:4462832")
 }
 
 processResources {
