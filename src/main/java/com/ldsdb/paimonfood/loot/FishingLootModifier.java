@@ -1,7 +1,7 @@
 package com.ldsdb.paimonfood.loot;
 
 import com.google.gson.JsonObject;
-import com.ldsdb.paimonfood.Utils;
+import com.ldsdb.paimonfood.util.Reference;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.LootContext;
 import net.minecraft.loot.conditions.ILootCondition;
@@ -13,8 +13,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class Fishing extends LootModifier {
-    protected Fishing(ILootCondition[] conditionsIn) {
+public class FishingLootModifier extends LootModifier {
+    protected FishingLootModifier(ILootCondition[] conditionsIn) {
         super(conditionsIn);
     }
 
@@ -23,19 +23,19 @@ public class Fishing extends LootModifier {
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         if (context.getRandom().nextFloat() < 0.1) {
             generatedLoot.clear();
-            generatedLoot.add(new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Utils.MOD_ID + ":paimon")), 1));
+            generatedLoot.add(new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Reference.MOD_ID + ":paimon")), 1));
         }
         return generatedLoot;
     }
 
-    public static class Serializer extends GlobalLootModifierSerializer<Fishing> {
+    public static class Serializer extends GlobalLootModifierSerializer<FishingLootModifier> {
         @Override
-        public Fishing read(ResourceLocation location, JsonObject object, ILootCondition[] ailootcondition) {
-            return new Fishing(ailootcondition);
+        public FishingLootModifier read(ResourceLocation location, JsonObject object, ILootCondition[] ailootcondition) {
+            return new FishingLootModifier(ailootcondition);
         }
 
         @Override
-        public JsonObject write(Fishing instance) {
+        public JsonObject write(FishingLootModifier instance) {
             return makeConditions(instance.conditions);
         }
     }

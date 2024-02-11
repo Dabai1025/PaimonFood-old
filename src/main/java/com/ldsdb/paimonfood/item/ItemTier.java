@@ -1,4 +1,4 @@
-package com.ldsdb.paimonfood.Sword;
+package com.ldsdb.paimonfood.item;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;

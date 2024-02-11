@@ -6,7 +6,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     }
 
-version = mod_version
+version = mod_version + "-mc" + minecraft_version
 group = mod_group_id
 
 base {
@@ -53,9 +53,15 @@ minecraft {
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
+repositories {
+    maven { url = "https://www.cursemaven.com" }
+}
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    runtimeOnly fg.deobf("curse.maven:jei-238222:5065656")
+    runtimeOnly fg.deobf("curse.maven:apple-skin-248787:4770812")
 }
 
 tasks.named('processResources', ProcessResources).configure {
