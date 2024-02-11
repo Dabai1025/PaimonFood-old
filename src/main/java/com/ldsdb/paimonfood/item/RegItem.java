@@ -8,6 +8,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class RegItem {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Utils.MOD_ID);
-    public static final RegistryObject<Item> PaiMonFoodItem = ITEMS.register("paimonfood_item", PaiMonFoodItem::new);
+    public static final RegistryObject<Item> PaimonFoodItem = ITEMS.register("paimonfood_item", PaimonFoodItem::new);
 }
 

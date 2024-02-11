@@ -4,7 +4,7 @@ import java.util.function.Function;
 import com.google.common.base.Supplier;
 import com.ldsdb.paimonfood.Utils;
 import com.ldsdb.paimonfood.item.RegItem;
-import com.ldsdb.paimonfood.tab.PaiMonFoodTab;
+import com.ldsdb.paimonfood.tab.PaimonFoodTab;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -25,7 +25,7 @@ public class RegBlock {
     public static final RegistryObject<Block> PAIMON_BLOCK = register("paimon_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PINK).strength(3.0f)
                     .sound(SoundType.METAL).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(PaiMonFoodTab.ITEM_TAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(PaimonFoodTab.ITEM_TAB)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(final String name,
                                                                      final Supplier<? extends T> block) {

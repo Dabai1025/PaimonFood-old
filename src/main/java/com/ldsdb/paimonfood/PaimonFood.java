@@ -15,11 +15,11 @@ import org.slf4j.Logger;
 
 
 @Mod(Utils.MOD_ID)
-public class PaiMonFood
+public class PaimonFood
 {
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public PaiMonFood()
+    public PaimonFood()
     {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
