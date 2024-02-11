@@ -1,6 +1,7 @@
 package com.ldsdb.paimonfood.loot;
 
 import com.google.gson.JsonObject;
+import com.ldsdb.paimonfood.config.Config;
 import com.ldsdb.paimonfood.util.Reference;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.LootContext;
@@ -21,7 +22,7 @@ public class FishingLootModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if (context.getRandom().nextFloat() < 0.1) {
+        if (context.getRandom().nextFloat() < 0.1 && Config.ENABLE_FISHING_LOOT_MODIFIER.get()) {
             generatedLoot.clear();
             generatedLoot.add(new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Reference.MOD_ID + ":paimon")), 1));
         }
