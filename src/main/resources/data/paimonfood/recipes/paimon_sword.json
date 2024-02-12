@@ -1,26 +1,26 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "DBD",
-      "CBC",
-      " A "
-    ],
-    "key": {
-      "A": {
-        "item": "minecraft:stick"
-      },
-      "B": {
-        "item": "paimonfood:paimon_block"
-      },
-      "C": {
-        "item": "minecraft:diamond"
-      },
-      "D": {
-        "item": "paimonfood:paimon"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DBD",
+    "CBC",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
     },
-    "result": {
-      "item": "paimonfood:paimon_sword",
-      "count": 1
+    "B": {
+      "item": "paimonfood:paimon_block"
+    },
+    "C": {
+      "item": "minecraft:diamond"
+    },
+    "D": {
+      "item": "paimonfood:paimon"
     }
+  },
+  "result": {
+    "item": "paimonfood:paimon_sword",
+    "count": 1
   }
+}

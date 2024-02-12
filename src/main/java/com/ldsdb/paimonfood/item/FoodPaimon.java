@@ -5,8 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 
-public class FoodPaimon extends Item
-{
+public class FoodPaimon extends Item {
     private static final Food food = (new Food.Builder())
             .nutrition(2)
             .saturationMod(0.2F)

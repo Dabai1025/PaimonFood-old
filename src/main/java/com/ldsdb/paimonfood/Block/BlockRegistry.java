@@ -11,6 +11,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,7 +25,7 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> PAIMON_BLOCK = register("paimon_block",
             () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_PINK).strength(3.0f)
-                    .sound(SoundType.METAL).requiresCorrectToolForDrops()),
+                    .sound(SoundType.METAL).requiresCorrectToolForDrops().harvestTool(ToolType.PICKAXE).harvestLevel(1)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Group.GROUP)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(final String name,

@@ -1,20 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "AB ",
-      "BA "
-    ],
-    "key": {
-      "A": {
-        "item": "minecraft:apple"
-      },
-      "B": {
-          "item": "minecraft:wheat"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB ",
+    "BA "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:apple"
     },
-    "result": {
-      "item": "paimonfood:paimon",
-      "count": 4
+    "B": {
+        "item": "minecraft:wheat"
     }
+  },
+  "result": {
+    "item": "paimonfood:paimon",
+    "count": 4
   }
-  
+}
