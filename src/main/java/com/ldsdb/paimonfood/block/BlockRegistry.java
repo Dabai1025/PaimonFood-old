@@ -1,10 +1,8 @@
 package com.ldsdb.paimonfood.block;
 
-import java.util.function.Function;
-import com.google.common.base.Supplier;
-import com.ldsdb.paimonfood.util.Reference;
 import com.ldsdb.paimonfood.item.ItemRegistry;
 import com.ldsdb.paimonfood.item.Tab;
+import com.ldsdb.paimonfood.util.Reference;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -15,6 +13,9 @@ import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class BlockRegistry {
 
