@@ -1,5 +1,6 @@
 {
   "item.paimonfood.paimonfood_item": "應急食品",
-  "itemGroup.paimonfoodtab": "應急食品",
-  "block.paimonfood.paimon_block": "派蒙方塊"
+  "item.paimonfood.paimon_sword": "派猛",
+  "block.paimonfood.paimon_block": "派蒙方塊",
+  "itemGroup.paimonfoodtab": "可食用派蒙"
 }

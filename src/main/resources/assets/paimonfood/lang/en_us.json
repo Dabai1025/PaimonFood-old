@@ -1,5 +1,6 @@
 {
-  "item.paimonfood.paimonfood_item": "P-a-i-M-o-n",
-  "itemGroup.paimonfoodtab": "PaiMonFood",
-  "block.paimonfood.paimon_block": "PaiMon Block"
+  "item.paimonfood.paimonfood_item": "P-a-i-m-o-n",
+  "item.paimonfood.paimon_sword": "Paimonife",
+  "block.paimonfood.paimon_block": "Paimon Block",
+  "itemGroup.paimonfoodtab": "PaimonFood"
 }
