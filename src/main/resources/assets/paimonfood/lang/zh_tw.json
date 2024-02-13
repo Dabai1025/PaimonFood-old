@@ -1,5 +1,11 @@
 {
-  "item.paimonfood.paimonfood_item": "應急食品",
-  "itemGroup.paimonfoodtab": "應急食品",
-  "block.paimonfood.paimon_block": "派蒙方塊"
+  "item.paimonfood.paimon": "應急食品",
+  "item.paimonfood.paimon_sword": "派猛",
+  "block.paimonfood.paimon_block": "派蒙方塊",
+  "itemGroup.paimonfoodtab": "可食用派蒙",
+
+  "advancements.paimonfood.paimon.title": "異世相遇",
+  "advancements.paimonfood.paimon.description": "所以說，你們是從世界之外⋯漂流來的？",
+  "advancements.paimonfood.root.title":"應急食品",
+  "advancements.paimonfood.root.description":"感謝遊玩"
 }

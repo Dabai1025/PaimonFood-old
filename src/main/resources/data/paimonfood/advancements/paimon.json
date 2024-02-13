@@ -1,0 +1,33 @@
+{
+  "parent": "paimonfood:root",
+  "display": {
+    "icon": {
+      "item": "paimonfood:paimon"
+    },
+    "title": {
+      "translate": "advancements.paimonfood.paimon.title"
+    },
+    "description": {
+      "translate": "advancements.paimonfood.paimon.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "paimon": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "item": "paimonfood:paimon"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "paimon"
+    ]
+  ]
+}
