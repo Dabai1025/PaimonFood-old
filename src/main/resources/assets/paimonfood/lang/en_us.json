@@ -1,0 +1,11 @@
+{
+  "item.paimonfood.paimon": "P-a-i-m-o-n",
+  "item.paimonfood.paimon_sword": "Paimonife",
+  "block.paimonfood.paimon_block": "Paimon Block",
+  "itemGroup.paimonfood_group": "PaimonFood",
+
+  "advancements.paimonfood.paimon.title": "Meet in another world",
+  "advancements.paimonfood.paimon.description": "So… what you're trying to say is that you fell here, from another world?",
+  "advancements.paimonfood.root.title":"Emergency food",
+  "advancements.paimonfood.root.description":"Thanks for playing"
+}
