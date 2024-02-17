@@ -1,0 +1,10 @@
+{
+  "type": "paimonfood:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing/fish"
+    }
+  ],
+  "item": "paimonfood:paimonfood_item"
+}
